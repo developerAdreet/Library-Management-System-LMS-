@@ -1,4 +1,4 @@
-Overview
+                                                                 LIBRARY MANAGEMENT SYSTEM(LMS)
 A backend system built with Spring Boot to manage library operations. It provides REST APIs for user registration, book borrow/return workflows, and library management. The project demonstrates clean layered architecture, DTO validation, centralized exception handling, and API documentation with Swagger.
 
  Tech Stack
