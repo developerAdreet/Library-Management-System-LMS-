@@ -34,7 +34,7 @@ public class BookUnableToBorrowExceptionHandler extends ResponseEntityExceptionH
 		ResponseStructure<String> responseStructure = new ResponseStructure<>();
 		responseStructure.setMessage("Request method not supported");
 		responseStructure.setStatusCode(status.value());
-		responseStructure.setMessage(ex.getMessage());
+		responseStructure.setData(ex.getMessage());
 		return ResponseEntity.status(status).body(responseStructure);
 	}
 
@@ -44,7 +44,7 @@ public class BookUnableToBorrowExceptionHandler extends ResponseEntityExceptionH
 		ResponseStructure<String> responseStructure = new ResponseStructure<>();
 		responseStructure.setMessage("Missing path variable");
 		responseStructure.setStatusCode(status.value());
-		responseStructure.setMessage(ex.getMessage());
+		responseStructure.setData(ex.getMessage());
 		return ResponseEntity.status(status).body(responseStructure);
 	}
 
@@ -54,7 +54,7 @@ public class BookUnableToBorrowExceptionHandler extends ResponseEntityExceptionH
 		ResponseStructure<String> responseStructure = new ResponseStructure<>();
 		responseStructure.setMessage("Missing data for request parameter");
 		responseStructure.setStatusCode(status.value());
-		responseStructure.setMessage(ex.getMessage());
+		responseStructure.setData(ex.getMessage());
 		return ResponseEntity.status(status).body(responseStructure);
 	}
 
@@ -64,7 +64,7 @@ public class BookUnableToBorrowExceptionHandler extends ResponseEntityExceptionH
 		ResponseStructure<String> responseStructure = new ResponseStructure<>();
 		responseStructure.setMessage("Data type mismatch");
 		responseStructure.setStatusCode(status.value());
-		responseStructure.setMessage(ex.getMessage());
+		responseStructure.setData(ex.getMessage());
 		return ResponseEntity.status(status).body(responseStructure);
 	}
 
