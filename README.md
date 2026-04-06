@@ -6,7 +6,7 @@ A backend system built with Spring Boot to manage library operations. It provide
 - Database: MySQL
 - Utilities: Lombok, ModelMapper, Jakarta Validation
 - API Documentation: Swagger/OpenAPI (springdoc)
-- Testing: JUnit, Mockito, Postman
+- Testing: Postman
 - Server: Embedded Tomcat 10.1
 - Build Tool: Maven
   
